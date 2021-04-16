@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD788751-4C1E-4E87-B952-A9E2EC3B353E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Height_Thermique_Sarl</RootNamespace>
+    <AssemblyName>Height-Thermique-Sarl</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archive-Devis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Archive-Devis.Designer.cs">
+      <DependentUpon>Archive-Devis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Archive-Facuture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Archive-Facuture.Designer.cs">
+      <DependentUpon>Archive-Facuture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Archive-Situation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Archive-Situation.Designer.cs">
+      <DependentUpon>Archive-Situation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRDevis.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRDevis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CryDevis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CryDevis.Designer.cs">
+      <DependentUpon>CryDevis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrySituation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrySituation.Designer.cs">
+      <DependentUpon>CrySituation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devis.Designer.cs">
+      <DependentUpon>Devis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="factureRPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>factureRPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Facture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Facture.Designer.cs">
+      <DependentUpon>Frm_Facture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_STT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_STT.Designer.cs">
+      <DependentUpon>frm_STT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsList.Designer.cs">
+      <DependentUpon>ProductsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptFacture.Designer.cs">
+      <DependentUpon>rptFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSituation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSituation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Update-Situation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update-Situation.Designer.cs">
+      <DependentUpon>Update-Situation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDevis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDevis.Designer.cs">
+      <DependentUpon>UpdateDevis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateFacture.Designer.cs">
+      <DependentUpon>UpdateFacture.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Archive-Devis.resx">
+      <DependentUpon>Archive-Devis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Archive-Facuture.resx">
+      <DependentUpon>Archive-Facuture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Archive-Situation.resx">
+      <DependentUpon>Archive-Situation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRDevis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRDevis.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CryDevis.resx">
+      <DependentUpon>CryDevis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrySituation.resx">
+      <DependentUpon>CrySituation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devis.resx">
+      <DependentUpon>Devis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factureRPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>factureRPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Facture.resx">
+      <DependentUpon>Frm_Facture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_STT.resx">
+      <DependentUpon>frm_STT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsList.resx">
+      <DependentUpon>ProductsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rptFacture.resx">
+      <DependentUpon>rptFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSituation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSituation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update-Situation.resx">
+      <DependentUpon>Update-Situation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDevis.resx">
+      <DependentUpon>UpdateDevis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFacture.resx">
+      <DependentUpon>UpdateFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
